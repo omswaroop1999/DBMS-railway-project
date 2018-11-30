@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>railway reservation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootsrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color:rgba(255, 99, 71, 0.6);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.boxes {
+    border-radius: 5px;
+    background-color:hsl(0, 0%, 94%);
+    padding: 20px;
+}
+.navbar-custom {
+    background-color:rgba(0, 0, 0,0.7);
+}
+/*p
+{
+  color:white;
+}*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+a {
+    text-decoration: none;
+    color: #fff;
+}
+p > a:hover{
+    color: #d9d9d9;
+    text-decoration:  underline;
+}
+._12 {
+    font-size: 1.2em;
+}
+._14 {
+    font-size: 1.4em;
+}
+ul {
+    padding:0;
+    list-style: none;
+}
+.footer-social-icons {
+    width: 350px;
+    display:block;
+    margin: 0 auto;
+}
+.social-icon {
+    color: #fff;
+}
+ul.social-icons {
+    margin-top: 10px;
+}
+.social-icons li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+.fa-facebook {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+.fa-twitter {
+    padding:10px 12px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+.fa-instagram{
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-instagram:hover {
+    background-color:  #ff0080;
+}
+.fa-youtube {
+    padding:10px 14px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-youtube:hover {
+    background-color: #e64a41;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+.fa-google-plus {
+    padding:10px 9px;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #322f30;
+}
+.fa-google-plus:hover {
+    background-color: #e25714;
+}
+li
+{
+  color: white;
+}
+ body {
+      position: relative; 
+  }
+
+ .navbar li a, .navbar .navbar-brand {
+      color: #ffffff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #000000 !important;
+      background-color:#5fb962 !important;
+  }
+    .navbar-custom .navbar-toggle {
+      border-color: transparent;
+      color: #a6f6fc !important;
+  }
+#logo
+{
+  height:30px;
+  width: 50px;
+}
+
+
+
+.link {
+  text-decoration: none;
+  color: #55acee;
+  border-bottom: 2px dotted #55acee;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -o-transition: .3s;
+  cursor: url(http://cur.cursors-4u.net/symbols/sym-1/sym46.cur), auto;
+}
+
+.link:hover {
+  color: #2ecc71;
+  border-bottom: 2px dotted #2ecc71;
+}
+
+/* button div */
+#buttons1 {
+  padding-top: 0px;
+  text-align: center;
+}
+
+/* start da css for da buttons */
+.btn1 {
+  border-radius: 5px;
+  padding: 5px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 5px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+}
+
+.btn1:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+  box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+  background-color: #55acee;
+  box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+  background-color: #6FC6FF;
+}
+
+.green {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15B358;
+}
+
+.green:hover {
+  background-color: #48E68B;
+}
+
+.red {
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #CE3323;
+}
+
+.red:hover {
+  background-color: #FF6656;
+}
+
+.purple {
+  background-color: #9b59b6;
+  box-shadow: 0px 5px 0px 0px #82409D;
+}
+
+.purple:hover {
+  background-color: #B573D0;
+}
+
+.orange {
+  background-color: #e67e22;
+  box-shadow: 0px 5px 0px 0px #CD6509;
+}
+
+.orange:hover {
+  background-color: #FF983C;
+}
+
+.yellow {
+  background-color: #f1c40f;
+  box-shadow: 0px 5px 0px 0px #D8AB00;
+}
+
+.yellow:hover {
+  background-color: #FFDE29;
+}
+</style>
+
+
+
+
+</head>
+<body id="home" style="height:1500px; background-color:hsl(0, 0%, 99%)" data-spy="scroll" data-target=".navbar" data-offset="60">
+  <div class="navbar navbar-inverse navbar-fixed-top navbar-custom">
+    <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img id="logo"
+        src="tlogo.png" alt="train LOGO"></a>
+        <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeadercollapse">
+      <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+    </button>
+       <div class="collapse navbar-collapse navHeadercollapse">
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#about">about</a></li>
+      <li><a href="#contact">contact</a></li>
+      <li><a href="#form">form</a></li>
+      <li><a href="ret.php">tables</a></li>
+      <li><a href="file:///E:/html/team1.html">team</a></li>
+       <li><a href="http://xyz.com" class="btn btn-primary" role="button" style="color: white">login</a></li>
+    </ul>
+  </div>
+      
+    </div>
+  </div>
+<div class="container-fluid" style="margin-top:100px width:100%">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item ">
+        <img src="train.jpg" alt="Los Angeles" style="width:100%;">
+      </div>
+
+      <div class="item">
+        <img src="train1.jpg" alt="Chicago" style="width:100%;">
+      </div>
+    
+      <div class="item active">
+        <img src="train2.jpg" alt="New york" style="width:100%;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+  <div id="about" class="container">
+    <h2><br>ABOUT</h2>
+    <p>It is known for changing the face of railway ticketing in India. It pioneered internet-based rail ticket booking through its website, as well as from the mobile phones via WiFi, GPRS or SMS. It also provides SMS facility to check PNR status and Live Train Status as well. In addition to e-tickets, Indian Railways Catering and Tourism Corporation also offers I-tickets that are basically like regular tickets except that they are booked online and delivered by post. The tickets PNR status is also made available</p>
+    <h2>about reservation system</h2>
+    <p>It is known for changing the face of railway ticketing in India. It pioneered internet-based rail ticket booking through its website, as well as from the mobile phones via WiFi, GPRS or SMS. It also provides SMS facility to check PNR status and Live Train Status as well. In addition to e-tickets, Indian Railways Catering and Tourism Corporation also offers I-tickets that are basically like regular tickets except that they are booked online and delivered by post. The tickets PNR status is also made available</p>
+
+    
+  </div>
+  <div class="container">
+    <div class="row">
+    <h2 class="text-center"></h2>
+ <div class="col-sm-6">
+<h2 class="text-center">videos</h2>
+<div class=center">
+<video width=100% height=auto autoplay controls>
+  <source src="v1.mp4" type="video/mp4">
+  <source src="v1.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</div>
+</div>
+<div class="col-sm-6 text-center"><h2>announcements</h2><br>
+<marquee  loop="-1" direction="up" scrollmount="5" width="90%" height="50%" style="width: 100%; height: 35%;"onmouseover="this.stop();" onmouseout="this.start();">
+<p style="color:red;"">&nbsp&nbsp&nbsp
+  Indian railway reservation
+  <br><br>
+  <b>Attention please! Please note that this is a platform alteration for the 10:38 Northern Rail service to: Saltburn. This train will now depart from platform 2. Platform 2 for the 10:38 Northern Rail service to: Saltburn.''</b>
+  
+  <br><br>
+  The train 18645 now standing at platform 3 is not in public service. Please do not board this train <br><br>
+  <b>Passengers are reminded that smoking is prohibited at all stations and on all train services</b>
+  <br><br>
+  <i>Here is a security announcement. Please do not leave luggage unattended anywhere on the station, any unattended luggage will be removed without warning and may be destroyed</i> <br><br>
+  <br><br>
+ 
+  <br>
+ 
+</marquee></div></div>
+</div>
+
+<div id="contact" class="container">
+  <h2 class="text-center"><br>Contact</h2>
+ 
+  <div class="row">
+    <div class="col-md-12">
+    <p class="text-center"><b>Email:</b>rail@reservation.com</p>
+    <p class="text-center"><b>CALL:</b>0891-264234</p>
+    </div>
+   </div>
+   <div id="form" class="container">
+  <h2 class="text-center"><br>forms </h2>
+<h3 style="color:blue;">Queries</h3>
+
+<div class="boxes">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="college">College</label>
+    <select id="college" name="college">
+      <option value="gitam">GITAM</option>
+      <option value="other">others</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+ </div>
+     <div class="footer-social-icons">
+    <h3 style="color:green">Follow us on</h3>
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-youtube"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-google-plus"></i></a></li>
+    </ul>
+    <p><br><br></p>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class= "col-sm-4 text-center">
+      <h2>Insert</h2>
+    <div id="buttons1">
+      <ul>
+  <li><a href="stations.php" class="btn1 blue">stations</a></li>
+  <li><a href="train.php" class="btn1 green">train</a></li>
+  <li><a href="#" class="btn1 red">route</a></li>
+  <li><a href="#" class="btn1 purple">train status</a></li>
+  <li><a href="#" class="btn1 orange">users</a></li>
+  <li><a href="#" class="btn1 yellow">reserve</a></li>
+  </ul>
+  </div>
+
+  </div>
+
+  <div class= "col-sm-4 text-center">
+    <h2>update</h2>
+     <div id="buttons1">
+      <ul>
+  <li><a href="" class="btn1 blue">stations</a></li>
+  <li><a href="" class="btn1 green">train</a></li>
+  <li><a href="#" class="btn1 red">route</a></li>
+  <li><a href="#" class="btn1 purple">train status</a></li>
+  <li><a href="updateusers.php" class="btn1 orange">users</a></li>
+  <li><a href="#" class="btn1 yellow">reserve</a></li>
+  </ul>
+  </div>
+
+   
+  </div>
+
+  <div class= "col-sm-4 text-center">
+    <h2>delete</h2>
+     
+      <div id="buttons1">
+      <ul>
+  <li><a href="delete.php" class="btn1 blue">stations</a></li>
+  <li><a href="" class="btn1 green">train</a></li>
+  <li><a href="#" class="btn1 red">route</a></li>
+  <li><a href="#" class="btn1 purple">train status</a></li>
+  <li><a href="#" class="btn1 orange">users</a></li>
+  <li><a href="#" class="btn1 yellow">reserve</a></li>
+  </ul>
+  </div>
+
+  </div>
+
+
+
+  </div>
+  
+  
+</div>
+
+
+
+
+
+
+
+<br><br>
+<div class="navbar navbar-inverse navbar-static-bottom">
+  <div class="container-fluid">
+    <p class="navbar-text" style="color:#e6e6e6"> &#169;swaroop</p>
+    <p class="navbar-text navbar-right" style="color:#e6e6e6">Rail reservation   </p>
+  </div>
+</div>
+
+
+</body>
+</html>
